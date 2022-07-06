@@ -53,6 +53,7 @@ const arryFeed = [
 
 export default function App() {
   const [feed,setFeed] = useState(arryFeed)
+
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -80,7 +81,8 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1
+    flex: 1,
+    marginTop:32
   },
   header:{
     height:55,
@@ -88,9 +90,9 @@ const styles = StyleSheet.create({
     alignItems:'center',
     justifyContent:'space-between',
     padding:7,
-    borderBottomWidth:0.2,
-    shadowColor:'black',
-    elevation:1
+    borderBottomWidth:0.3,
+    shadowColor:'black'
+    
   },
   send:{
     width:23,
